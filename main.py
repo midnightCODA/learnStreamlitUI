@@ -1,7 +1,9 @@
 import streamlit as st
 import langchain_helper as lch
 
-st.title("🏫🎒👨‍🏫👩‍🏫 O-level Student teacher")
+st.title("🎒 O-level Student teacher")
+
+st.header('can i get moving please')
 
 subject = st.sidebar.selectbox("What do you want to study subject?", ("Chemistry", "biology", "physiscs", "history", "civics"))
 

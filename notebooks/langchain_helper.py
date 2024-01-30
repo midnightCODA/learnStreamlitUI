@@ -7,7 +7,6 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-
 def teach_me_about(subject, topic, openai_api_key):
     llm = OpenAI(temperature=0.7, openai_api_key=openai_api_key)
 
@@ -19,7 +18,6 @@ def teach_me_about(subject, topic, openai_api_key):
     name_chain = LLMChain(llm=llm, prompt=prompt_template_name, output_key="answers")
 
     response = name_chain({'topic': topic, 'subject': subject})
-
 
     return response
 
